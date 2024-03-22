@@ -1,13 +1,18 @@
+.fullScreen-clr {
+    background-color: ghostwhite;
+}
+
 .logoutWrapper{
     padding: 20px 15px 0px 15px  ;
 }
 
 .wholeContent {
-    height: 100%;
+    min-height: 100%;
 }
 
 .profileContiner {
     max-width: 800px !important;
+    background-color: white;
 }
 
 .profileWrapper {
@@ -30,6 +35,7 @@
 
 .changeAvatharContainer {
     max-width: 800px !important;
+    background-color: white;
 }
 
 .avatharIcons{
@@ -47,16 +53,16 @@
 
 .btn-logout {
     height: 40px;
-    background-color: #eb5850 !important;
-    color: white !important;
+    border: 1px solid #eb5850 !important;
+    color: #eb5850 !important;
     font-weight: 600 !important;
 }
 
-.btn-logout:hover {
-    background-color: #d63f37 !important;
+.btn-logout:hover {    
+    background-color: #eb5850 !important;
+    color: white !important;
 }
-
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .wholeContent {
         flex-direction: column;
         align-items: center;
@@ -73,4 +79,4 @@
     .profileUpdateWrapper {
         margin-top: 20px;
     }
-}
+} */
