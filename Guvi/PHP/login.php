@@ -1,9 +1,9 @@
 <?php
 
-// $redis = new Redis();
-// if (!$redis->connect('127.0.0.1', 6379)) {
-//     die("Failed to connect to Redis");
-// }
+$redis = new Redis();
+if (!$redis->connect('127.0.0.1', 6379)) {
+    die("Failed to connect to Redis");
+}
 
 // $servername = "localhost:3306";
 // $username_db = "root";
@@ -43,12 +43,12 @@ $loginTime = time();
 if ($result->num_rows > 0) {
     $row = $result->fetch_assoc();
     $sessionId = uniqid();
-    // $redis->hMSet($sessionId, [
-    //     'user_id' => $user_id,
-    //     'username' => $username,
-    //     'login_time' => $loginTime
-    // ]);
-    // $redis->expire($sessionId, 3600);
+    $redis->hMSet($sessionId, [
+        'user_id' => $user_id,
+        'username' => $username,
+        'login_time' => $loginTime
+    ]);
+    $redis->expire($sessionId, 3600);
     $response['status'] = "logined";
     $response['sessionId'] = $sessionId;
 } else {
