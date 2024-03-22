@@ -2,22 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>home</title>
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/login.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/index.css" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col text-center">
-                <h2>Guvi Assessment</h2>
-                <a href="login.html" class="btn btn-primary">Login</a>
-                <a href="register.html" class="btn btn-secondary">Register</a>
+    <svg class="blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <path d="M29,-40C42.3,-30.1,61.3,-28.1,57.7,-22.7C54,-17.2,27.7,-8.4,22.3,6.9C16.9,22.2,32.4,44,32.1,60.2C31.9,76.4,15.9,87.1,-0.3,87.5C-16.6,87.9,-33.1,78.1,-45.3,65.8C-57.4,53.5,-65.2,38.6,-72.1,22.3C-79.1,6,-85.1,-11.8,-78.7,-23.8C-72.4,-35.8,-53.7,-41.9,-38.5,-51.3C-23.3,-60.6,-11.7,-73,-1.9,-70.4C7.8,-67.7,15.6,-49.9,29,-40Z" transform="translate(100 100)" />
+    </svg>
+    <div class="fullScreen fullScreen-clr d-flex align-items-center justify-content-center px-4 ">
+        <div class="commonContainer loginContainer-clr container-sm d-flex flex-column align-items-start justify-content-center rounded-4 px-5">
+
+            <h1 class="mb-5 title title-clr">Guvi Assessment</h2>
+            <div class="d-flex align-items-center gap-3 ">
+                <a class="btn btn-custom btn-custom-clr btn-block btn-large align-self-end " href="login.html">Login</a>
+                <a class="btn btn-custom btn-custom-clr btn-block btn-large align-self-end " href="register.html">Register</a>
             </div>
         </div>
     </div>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
+    <script src="JS/home.js"></script>
+
 </html>
