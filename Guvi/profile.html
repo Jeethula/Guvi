@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Profile</title>
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="css/common.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="fullScreen d-flex flex-column w-100 h-100 px-4 ">
+
+        <div class="logoutWrapper d-flex align-items-center justify-content-end  ">
+            <button onclick="logout()" class="btn btn-logout btn-block btn-large ">Log Out</button>
+        </div>
+
+        <div class="wholeContent d-flex align-items-center justify-content-evenly ">
+
+            <div class="profileWrapper d-flex flex-column align-items-center justify-content-center gap-5  " >
+
+                <img class="avatharIcons" src="https://i.pinimg.com/236x/a2/92/59/a29259d7c2b8b1b5952e2ea2785032c0.jpg" width="300px" height="300px" alt="avathar7" >
+                <h5 class="name">Jeeththenthar LA</h5>
+                <div>
+                    <h6 class="subTitle">Motivational Quotes</h6>
+                </div>
+
+            </div>
+
+            <div class="profileUpdateWrapper d-flex flex-column align-items-center justify-content-center ">
+
+
+                <div class="commonContainer profileContiner container-md d-flex flex-column align-items-start justify-content-center rounded-4 px-5 py-4 mb-4 gap-3">
+
+                    <div class="d-flex align-items-center justify-content-between w-100 ">                    
+                        <h1 class="profileTitle">Update Profile</h1>
+                        <button onclick="updateProfile()" class="btn btn-primary btn-block btn-large ">Update Changes</button>
+                    </div>
+
+                    <div class="form-floating w-100 ">
+                        <input class=" form-control" type="text" name="name" id="name" placeholder="Name" required />
+                        <label for="floatingInput">Name</label>
+                    </div>
+
+                    <div class="form-floating w-100 ">
+                        <input class=" form-control" type="textarea" name="Address" id="address" placeholder="Address" required />
+                        <label for="floatingInput">Address</label>
+                    </div>
+                    
+                    <div class="form-floating w-100 ">
+                        <input class=" form-control" type="number" name="age" id="age" placeholder="Age" required />
+                        <label for="floatingInput">Age</label>
+                    </div>
+
+                    <div class="form-floating w-100 ">
+                        <input class=" form-control" type="text" name="phone" id="phone" placeholder="Phone" required />
+                        <label for="floatingInput">Phone</label>
+                    </div>
+                
+                </div>
+
+                <div class="commonContainer changeAvatharContainer container-md d-flex flex-column justify-content-between align-items-start rounded-4  px-5 py-4 overflow-x-auto ">
+                    <h6 class="subTitle mb-3">Choose an Avathar</h6>
+                    <div class="d-flex gap-3 justify-content-evenly ">
+                        <img class="avatharIcons" src="https://i.pinimg.com/564x/3c/95/b6/3c95b6f6d7d4fb8320d663c8314a18a1.jpg" width="120px" height="120px" alt="avathar1" >
+                        <img class="avatharIcons" src="https://i.pinimg.com/236x/36/b5/6d/36b56d1a4c5f2350d23661dff439f6bb.jpg" width="120px" height="120px" alt="avathar2" >
+                        <img class="avatharIcons" src="https://i.pinimg.com/236x/5f/30/dd/5f30dd9e794a5a509398b45cd38274c2.jpg" width="120px" height="120px" alt="avathar3" >
+                        <img class="avatharIcons" src="https://i.pinimg.com/236x/b7/a1/b0/b7a1b08769803edd659cb1250cf7aa4b.jpg" width="120px" height="120px" alt="avathar4" >
+                        <img class="avatharIcons" src="https://i.pinimg.com/474x/ec/6c/c8/ec6cc8f5a9cd2c86301fa10c5519dfd8.jpg" width="120px" height="120px" alt="avathar5" >
+                        <img class="avatharIcons" src="https://i.pinimg.com/236x/4a/e5/d6/4ae5d6acd7226353af132969be733a61.jpg" width="120px" height="120px" alt="avathar6" >
+                        <img class="avatharIcons" src="https://i.pinimg.com/236x/a2/92/59/a29259d7c2b8b1b5952e2ea2785032c0.jpg" width="120px" height="120px" alt="avathar7" >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="JS/profile.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

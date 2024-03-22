@@ -1,0 +1,43 @@
+
+.fullScreen-clr {
+    background-color: rgb(252, 61, 3,0.8);
+}
+
+.loginContainer-clr {
+    max-width: 450px !important;
+    background-color: #25507b;
+}
+
+.title-clr {
+    color: white;
+}
+
+.blob {
+    fill: #fcba03;
+    position: absolute;
+    width: 2000px;
+    height: 2000px;
+    top: -110%;
+    left: 20%;
+    rotate: 70deg;
+    z-index: 1;
+}
+
+.btn-custom-clr {
+    background-color: greenyellow !important;
+    color: #272727 !important;
+}
+
+.btn-custom-clr:hover {
+    background-color: #272727 !important;
+    color: greenyellow !important;
+}
+
+.link {
+    color: #a8d7f2;
+    transition: 0.3s;
+}
+
+.link:hover {
+    color: #e5be55;
+}    

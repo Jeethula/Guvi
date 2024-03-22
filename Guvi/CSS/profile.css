@@ -1,0 +1,76 @@
+.logoutWrapper{
+    padding: 20px 15px 0px 15px  ;
+}
+
+.wholeContent {
+    height: 100%;
+}
+
+.profileContiner {
+    max-width: 800px !important;
+}
+
+.profileWrapper {
+    width: 30%;
+}
+
+.profileUpdateWrapper {
+    width: 70%;
+}
+
+.name{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.subTitle {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.changeAvatharContainer {
+    max-width: 800px !important;
+}
+
+.avatharIcons{
+    border-radius: 100%;
+    padding: 3px;
+    border: 1px solid #434343;
+    cursor: pointer;
+}
+
+.profileTitle {
+    line-height: 30px;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.btn-logout {
+    height: 40px;
+    background-color: #eb5850 !important;
+    color: white !important;
+    font-weight: 600 !important;
+}
+
+.btn-logout:hover {
+    background-color: #d63f37 !important;
+}
+
+@media (max-width: 768px) {
+    .wholeContent {
+        flex-direction: column;
+        align-items: center;
+    }
+    .profileUpdateWrapper {
+        margin-top: 20px;
+    }
+}
+@media (max-width: 576px) {
+    .profileWrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .profileUpdateWrapper {
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,46 @@
+
+.fullScreen-clr {
+    background-color: rgb(252, 61, 3,0.8);
+}
+
+.registerContainer-clr {
+    max-width: 450px !important;
+    background-color: #25507b;
+}
+
+.title-clr {
+    color: white;
+}
+
+.blob {
+    fill: #fcba03;
+    position: absolute;
+    width: 300%;
+    height: 300%;
+    top: -85%;
+    right: -75%;
+    rotate: 55deg;
+    z-index: 1;
+}
+
+.btn-custom-clr {
+    background-color: greenyellow !important;
+    color: #272727 !important;
+    /* color: #25507b !important; */
+}
+
+.btn-custom-clr:hover {
+    /* background-color: rgb(143, 207, 47) !important;
+    color: #eff5ff !important; */
+    background-color: #272727 !important;
+    color: greenyellow !important;
+}
+
+.link {
+    color: #a8d7f2;
+    transition: 0.3s;
+}
+
+.link:hover {
+    color: #ffd562;
+} 
