@@ -5,10 +5,15 @@
 //     die("Failed to connect to Redis");
 // }
 
-$servername = "localhost:3306";
-$username_db = "root";
-$password_db = "8903942007";
-$dbname = "jeethu";
+// $servername = "localhost:3306";
+// $username_db = "root";
+// $password_db = "8903942007";
+// $dbname = "jeethu";
+
+$servername = "mysql5048.site4now.net";
+$username_db="aa6c48_guvi123";
+$password_db="Password@123";
+$dbname="db_aa6c48_guvi123";
 
 $conn = new mysqli($servername, $username_db, $password_db, $dbname);
 
