@@ -41,7 +41,7 @@ try {
             exit();
         }
 
-        $collection = $db->selectCollection('your_collection_name'); // Replace 'your_collection_name' with your actual collection name
+        $collection = $db->userProfile; 
         $result = $collection->updateOne(
             ['email' => $postData['email']],
             ['$set' => $postData],
